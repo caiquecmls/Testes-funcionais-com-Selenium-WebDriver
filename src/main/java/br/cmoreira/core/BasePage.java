@@ -25,7 +25,7 @@ public class BasePage {
 		getDriver().findElement(By.id(id_campo)).click();
 	}
 	
-	public void ClicarEmAlgo(By by) {
+	public void ClicarBotao(By by) {
 		getDriver().findElement(by).click();
 	}
 	
@@ -56,6 +56,7 @@ public class BasePage {
 	    Select combo = new Select(elemento);
 	    return combo.getFirstSelectedOption().getText();
 	}
+	
 	
 	public void ClicarBotao(String id_campo) {
 		getDriver().findElement(By.id(id_campo)).click();
