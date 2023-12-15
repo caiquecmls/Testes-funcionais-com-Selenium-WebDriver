@@ -29,6 +29,9 @@ public class BasePage {
 		getDriver().findElement(by).click();
 	}
 	
+	
+	//href="/addConta"
+	
 	public void ClicarRadioButtonNew(String name_campo) {
 		getDriver().findElement(By.name(name_campo)).click();
 	}

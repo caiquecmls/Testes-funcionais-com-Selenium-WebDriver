@@ -1,9 +1,5 @@
 package br.cmoreira.pages;
-
-import org.junit.After;
-import org.junit.Test;
 import org.openqa.selenium.By;
-
 import br.cmoreira.core.BasePage;
 import br.cmoreira.core.DriverFactory;
 
