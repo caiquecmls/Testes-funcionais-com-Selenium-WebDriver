@@ -30,8 +30,9 @@ public class BasePage {
 		getDriver().findElement(by).click();
 	}
 	
-	
-	//href="/addConta"
+	public void ClicarBotaoPeloNome(String botao) {
+		getDriver().findElement(By.xpath("//button[text()='"+botao+"']")).click();
+	}
 	
 	public void ClicarRadioButtonNew(String name_campo) {
 		getDriver().findElement(By.name(name_campo)).click();
