@@ -1,11 +1,19 @@
 package br.cmoreira.pages;
 
+import static br.cmoreira.core.DriverFactory.getDriver;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import br.cmoreira.core.BasePage;
+import br.cmoreira.core.DriverFactory;
 
-public class MovimentacaoPage extends BasePage{
-	
+public class MovimentacaoPage extends BasePage {
+
 	public void setDataMovimentacao(String data) {
 		Escrever("data_transacao", data);
 	}
@@ -13,28 +21,37 @@ public class MovimentacaoPage extends BasePage{
 	public void setDataPagamento(String data) {
 		Escrever("data_pagamento", data);
 	}
-	
+
 	public void setDescricao(String descricao) {
 		Escrever("descricao", descricao);
 	}
-	
+
 	public void setInteressado(String interessado) {
 		Escrever("interessado", interessado);
 	}
-	
+
 	public void setValor(String valor) {
 		Escrever("valor", valor);
 	}
-	
+
 	public void selecionarConta(int conta) {
-		ClicarBotao(By.xpath("//*[@id='conta']/option["+conta+"]"));
+		ClicarBotao(By.xpath("//*[@id='conta']/option[" + conta + "]"));
 	}
-	
-	//public void Salvar() {
-	//	ClicarBotao(By.xpath("//div[@class='btn-group']/button"));
-	//}
-	
+
+	// public void Salvar() {
+	// ClicarBotao(By.xpath("//div[@class='btn-group']/button"));
+	// }
+
 	public String obterMensagemSucesso() {
 		return ObterTexto(By.xpath("//div[@class='alert alert-success']"));
+	}
+
+	public List<String> obterErros(){
+		List<WebElement> erros = getDriver().findElements(By.xpath("//div[@class='alert alert-danger']//li"));
+		List<String> retorno = new ArrayList<String>(); 
+		for (WebElement erro : erros) {
+			retorno.add(erro.getText());
+		}
+		return retorno;
 	}
 }
