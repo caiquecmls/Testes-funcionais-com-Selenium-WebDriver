@@ -91,6 +91,10 @@ public class BasePage {
 		return js.executeScript(cmd, param);
 	}
 	
+	public String obterMensagemErro(String xpath) {
+		return ObterTexto(By.xpath(xpath));
+	}
+	
 	/************** Tabela *********************/
 	
 	
