@@ -1,9 +1,5 @@
 package br.cmoreira.tests;
 
-import static org.junit.Assert.assertEquals;
-
-import java.sql.Date;
-import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.List;
 
@@ -26,7 +22,7 @@ public class MovimentacaoTest extends BaseTest{
 	@Test
 	public void testInserirMovimentacao() {
 		menuPage.acessarTelaCriarMovimentacao();
-		movimentacaoPage.setDataMovimentacao("14/12/2023");
+		movimentacaoPage.setDataMovimentacao(data.formatarData(new java.util.Date()));
 		movimentacaoPage.setDataPagamento("15/12/2023");
 		movimentacaoPage.setDescricao("HEHEHEHE");
 		movimentacaoPage.setInteressado("Banco");

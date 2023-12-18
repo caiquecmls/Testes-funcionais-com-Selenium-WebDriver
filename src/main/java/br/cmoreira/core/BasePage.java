@@ -95,6 +95,10 @@ public class BasePage {
 		return ObterTexto(By.xpath(xpath));
 	}
 	
+	public String obterMensagemSucesso(String xpath) {
+		return ObterTexto(By.xpath(xpath));
+	}
+	
 	/************** Tabela *********************/
 	
 	
@@ -117,8 +121,7 @@ public class BasePage {
 	
 	public void clicarBotaoTabela(String colunaBusca, String valor, String colunaBotao, String idTabela) {
 	    WebElement celula = obterCelula(colunaBusca, valor, colunaBotao, idTabela);
-	    celula.findElement(By.xpath(".//input")).click();
-	    
+	    celula.findElement(By.xpath(".//input")).click();  
 	}
 
 	protected int obterIndiceLinha(String valor, WebElement tabela, int idColuna) {

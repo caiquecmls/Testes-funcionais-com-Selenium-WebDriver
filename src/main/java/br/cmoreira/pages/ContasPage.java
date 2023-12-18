@@ -26,4 +26,13 @@ public class ContasPage extends BasePage{
 	public String obterMensagemErro() {
 		return ObterTexto(By.xpath("//div[@class='alert alert-danger']"));
 	}
+	
+	//public void excluirConta(int linhaBotao) {
+	//	clicarBotaoTabela("Conta", "conta 1", "Ações", "tabelaContas", ("(//*[@class=\"glyphicon glyphicon-remove-circle\"])["+linhaBotao+"]"));
+	//}
+	
+	public void clicarExcluirConta(String string) {
+		//Coluna, "nome do elemento", "coluna do botao" e "idTabela"
+		obterCelula("Conta", string, "Ações", "tabelaContas").findElement(By.xpath("(//*[@class=\"glyphicon glyphicon-remove-circle\"])")).click();
+	}
 }

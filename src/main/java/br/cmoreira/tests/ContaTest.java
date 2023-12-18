@@ -2,6 +2,7 @@ package br.cmoreira.tests;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.openqa.selenium.By;
 
 import br.cmoreira.core.BaseTest;
 import br.cmoreira.pages.ContasPage;
@@ -35,5 +36,13 @@ public class ContaTest extends BaseTest{
 		pageConta.setNome("conta 1");
 		pageConta.salvar();
 		Assert.assertEquals("Já existe uma conta com esse nome!", pageConta.obterMensagemErro());
+	}
+	
+	@Test
+	public void testRemoverContaComMovimentacao() {
+		page.acessarTelaListarConta();
+		//pageConta.excluirConta(1);
+		pageConta.clicarExcluirConta("conta 1");	
+		Assert.assertEquals("Conta em uso na movimentações", pageConta.obterMensagemErro());
 	}
 }
