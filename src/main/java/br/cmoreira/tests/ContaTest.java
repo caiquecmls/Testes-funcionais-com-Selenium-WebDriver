@@ -16,7 +16,7 @@ public class ContaTest extends BaseTest{
 	@Test
 	public void testInserirConta() {
 		page.acessarTelaInserirConta();
-		pageConta.setNome("conta 1");
+		pageConta.setNome("conta 2");
 		pageConta.salvar();
 		Assert.assertEquals("Conta adicionada com sucesso!", pageConta.obterMensagemSucesso());
 	}

@@ -28,7 +28,8 @@ public class MovimentacaoTest extends BaseTest{
 		movimentacaoPage.setInteressado("Banco");
 		movimentacaoPage.setValor("180");
 		//movimentacaoPage.selecionarConta(2);
-		movimentacaoPage.SelecionarCombo("conta", "conta 1");		
+		movimentacaoPage.SelecionarCombo("conta", "conta 2");		
+		movimentacaoPage.ClicarRadioButton("status_pago");
 		movimentacaoPage.ClicarBotaoPeloNome("Salvar");
 		Assert.assertEquals("Movimentação adicionada com sucesso!", movimentacaoPage.obterMensagemSucesso());
 	}
@@ -62,5 +63,6 @@ public class MovimentacaoTest extends BaseTest{
 		movimentacaoPage.ClicarBotaoPeloNome("Salvar");
 		Assert.assertEquals("Data da Movimentação deve ser menor ou igual à data atual", movimentacaoPage.obterMensagemErro("//div[@class='alert alert-danger']"));
 	}
+	
 	
 }

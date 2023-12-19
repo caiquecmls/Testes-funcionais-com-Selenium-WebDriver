@@ -14,7 +14,7 @@ public class ResumoTest extends BaseTest{
 	
 	@Test
 	public void testRemoverMovimentacao() {
-		menuPage.acessarTelaResmo();
+		menuPage.acessarTelaResumo();
 		resumoPage.excluirMovimentacao(1);	
 		Assert.assertEquals("Movimentação removida com sucesso!", resumoPage.obterMensagemSucesso());
 	}

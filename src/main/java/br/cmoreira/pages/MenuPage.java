@@ -22,7 +22,11 @@ public class MenuPage extends BasePage{
 		ClicarLink("Criar Movimentação");
 	}
 	
-	public void acessarTelaResmo() {
+	public void acessarTelaResumo() {
 		ClicarLink("Resumo Mensal");
+	}
+	
+	public void acessarTelaHome() {
+		ClicarLink("Home");
 	}
 }
