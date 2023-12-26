@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-22T06:02:17Z" name="Surefire suite" finished-at="2023-12-22T06:02:32Z" duration-ms="15548">
+    <groups>
+    </groups>
+    <test started-at="2023-12-22T06:02:17Z" name="Surefire test" finished-at="2023-12-22T06:02:32Z" duration-ms="15548">
+      <class name="br.cmoreira.tests.MovimentacaoTest">
+        <test-method signature="test1_InserirMovimentacao()" started-at="2023-12-22T06:02:17Z" name="test1_InserirMovimentacao" finished-at="2023-12-22T06:02:25Z" duration-ms="7991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1_InserirMovimentacao -->
+        <test-method signature="test3_InserirMovimentacaoFutura()" started-at="2023-12-22T06:02:17Z" name="test3_InserirMovimentacaoFutura" finished-at="2023-12-22T06:02:28Z" duration-ms="10846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3_InserirMovimentacaoFutura -->
+        <test-method signature="test2_CamposObrigatoriosMovimentacao()" started-at="2023-12-22T06:02:17Z" name="test2_CamposObrigatoriosMovimentacao" finished-at="2023-12-22T06:02:26Z" duration-ms="9188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2_CamposObrigatoriosMovimentacao -->
+      </class> <!-- br.cmoreira.tests.MovimentacaoTest -->
+      <class name="br.cmoreira.tests.ContaTest">
+        <test-method signature="test1_InserirConta()" started-at="2023-12-22T06:02:17Z" name="test1_InserirConta" finished-at="2023-12-22T06:02:20Z" duration-ms="3400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1_InserirConta -->
+        <test-method signature="test2_AlterarConta()" started-at="2023-12-22T06:02:17Z" name="test2_AlterarConta" finished-at="2023-12-22T06:02:22Z" duration-ms="4968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2_AlterarConta -->
+        <test-method signature="test3_InserirContaComMesmoNome()" started-at="2023-12-22T06:02:17Z" name="test3_InserirContaComMesmoNome" finished-at="2023-12-22T06:02:23Z" duration-ms="6300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3_InserirContaComMesmoNome -->
+      </class> <!-- br.cmoreira.tests.ContaTest -->
+      <class name="br.cmoreira.tests.ResumoTest">
+        <test-method signature="test1_RemoverMovimentacao()" started-at="2023-12-22T06:02:17Z" name="test1_RemoverMovimentacao" finished-at="2023-12-22T06:02:31Z" duration-ms="14406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1_RemoverMovimentacao -->
+        <test-method signature="test2_ResumoMensal()" started-at="2023-12-22T06:02:17Z" name="test2_ResumoMensal" finished-at="2023-12-22T06:02:32Z" duration-ms="15406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2_ResumoMensal -->
+      </class> <!-- br.cmoreira.tests.ResumoTest -->
+      <class name="br.cmoreira.tests.SaldoTest">
+        <test-method signature="testVerificarSaldo()" started-at="2023-12-22T06:02:17Z" name="testVerificarSaldo" finished-at="2023-12-22T06:02:30Z" duration-ms="13224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerificarSaldo -->
+      </class> <!-- br.cmoreira.tests.SaldoTest -->
+      <class name="br.cmoreira.tests.RemoverMovimentacaoContaTest">
+        <test-method signature="testRemoverContaComMovimentacao() throws java.lang.InterruptedException" started-at="2023-12-22T06:02:17Z" name="testRemoverContaComMovimentacao" finished-at="2023-12-22T06:02:29Z" duration-ms="12163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoverContaComMovimentacao -->
+      </class> <!-- br.cmoreira.tests.RemoverMovimentacaoContaTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

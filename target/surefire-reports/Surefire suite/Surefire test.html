@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Dec 22 03:02:17 BRT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>15 seconds (15548 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='br.cmoreira.tests.ContaTest.test1_InserirConta()'><b>test1_InserirConta</b><br>Test class: br.cmoreira.tests.ContaTest</td>
+<td></td>
+<td>3</td>
+<td>test1_InserirConta(br.cmoreira.tests.ContaTest)</td></tr>
+<tr>
+<td title='br.cmoreira.tests.MovimentacaoTest.test1_InserirMovimentacao()'><b>test1_InserirMovimentacao</b><br>Test class: br.cmoreira.tests.MovimentacaoTest</td>
+<td></td>
+<td>7</td>
+<td>test1_InserirMovimentacao(br.cmoreira.tests.MovimentacaoTest)</td></tr>
+<tr>
+<td title='br.cmoreira.tests.ResumoTest.test1_RemoverMovimentacao()'><b>test1_RemoverMovimentacao</b><br>Test class: br.cmoreira.tests.ResumoTest</td>
+<td></td>
+<td>14</td>
+<td>test1_RemoverMovimentacao(br.cmoreira.tests.ResumoTest)</td></tr>
+<tr>
+<td title='br.cmoreira.tests.ContaTest.test2_AlterarConta()'><b>test2_AlterarConta</b><br>Test class: br.cmoreira.tests.ContaTest</td>
+<td></td>
+<td>4</td>
+<td>test2_AlterarConta(br.cmoreira.tests.ContaTest)</td></tr>
+<tr>
+<td title='br.cmoreira.tests.MovimentacaoTest.test2_CamposObrigatoriosMovimentacao()'><b>test2_CamposObrigatoriosMovimentacao</b><br>Test class: br.cmoreira.tests.MovimentacaoTest</td>
+<td></td>
+<td>9</td>
+<td>test2_CamposObrigatoriosMovimentacao(br.cmoreira.tests.MovimentacaoTest)</td></tr>
+<tr>
+<td title='br.cmoreira.tests.ResumoTest.test2_ResumoMensal()'><b>test2_ResumoMensal</b><br>Test class: br.cmoreira.tests.ResumoTest</td>
+<td></td>
+<td>15</td>
+<td>test2_ResumoMensal(br.cmoreira.tests.ResumoTest)</td></tr>
+<tr>
+<td title='br.cmoreira.tests.ContaTest.test3_InserirContaComMesmoNome()'><b>test3_InserirContaComMesmoNome</b><br>Test class: br.cmoreira.tests.ContaTest</td>
+<td></td>
+<td>6</td>
+<td>test3_InserirContaComMesmoNome(br.cmoreira.tests.ContaTest)</td></tr>
+<tr>
+<td title='br.cmoreira.tests.MovimentacaoTest.test3_InserirMovimentacaoFutura()'><b>test3_InserirMovimentacaoFutura</b><br>Test class: br.cmoreira.tests.MovimentacaoTest</td>
+<td></td>
+<td>10</td>
+<td>test3_InserirMovimentacaoFutura(br.cmoreira.tests.MovimentacaoTest)</td></tr>
+<tr>
+<td title='br.cmoreira.tests.RemoverMovimentacaoContaTest.testRemoverContaComMovimentacao()'><b>testRemoverContaComMovimentacao</b><br>Test class: br.cmoreira.tests.RemoverMovimentacaoContaTest</td>
+<td></td>
+<td>12</td>
+<td>testRemoverContaComMovimentacao(br.cmoreira.tests.RemoverMovimentacaoContaTest)</td></tr>
+<tr>
+<td title='br.cmoreira.tests.SaldoTest.testVerificarSaldo()'><b>testVerificarSaldo</b><br>Test class: br.cmoreira.tests.SaldoTest</td>
+<td></td>
+<td>13</td>
+<td>testVerificarSaldo(br.cmoreira.tests.SaldoTest)</td></tr>
+</table><p>
+</body>
+</html>

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import br.cmoreira.core.BaseTest;
+import br.cmoreira.core.Propriedades;
 import br.cmoreira.pages.MenuPage;
 import br.cmoreira.pages.SaldoPage;
 
@@ -15,6 +16,6 @@ public class SaldoTest extends BaseTest{
 	@Test
 	public void testVerificarSaldo() {
 		menuPage.acessarTelaHome();
-		Assert.assertEquals("180.00", saldoPage.obterSaldoConta("conta 2"));
+		Assert.assertEquals("180.00", saldoPage.obterSaldoConta(Propriedades.NOME_CONTA_ALTERADA));
 	}
 }

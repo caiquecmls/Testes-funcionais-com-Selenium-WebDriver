@@ -1,8 +1,8 @@
 package br.cmoreira.pages;
 
 import org.openqa.selenium.By;
-
 import br.cmoreira.core.BasePage;
+
 
 public class ContasPage extends BasePage{
 	
@@ -22,7 +22,7 @@ public class ContasPage extends BasePage{
 		obterCelula("Conta", string, "Ações", "tabelaContas")
 		.findElement(By.xpath(".//span[@class='glyphicon glyphicon-edit']")).click();
 	}
-	
+
 	public String obterMensagemErro() {
 		return ObterTexto(By.xpath("//div[@class='alert alert-danger']"));
 	}
@@ -31,8 +31,8 @@ public class ContasPage extends BasePage{
 	//	clicarBotaoTabela("Conta", "conta 1", "Ações", "tabelaContas", ("(//*[@class=\"glyphicon glyphicon-remove-circle\"])["+linhaBotao+"]"));
 	//}
 	
+
 	public void clicarExcluirConta(String string) {
-		//Coluna, "nome do elemento", "coluna do botao" e "idTabela"
-		obterCelula("Conta", string, "Ações", "tabelaContas").findElement(By.xpath("(//*[@class=\"glyphicon glyphicon-remove-circle\"])")).click();
+		obterCelula("Conta", string, "Ações", "tabelaContas").findElement(By.xpath(".//span[@class='glyphicon glyphicon-remove-circle']")).click();
 	}
 }

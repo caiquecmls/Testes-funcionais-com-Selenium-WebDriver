@@ -1,0 +1,17 @@
+br\cmoreira\tests\SaldoTest.class
+br\cmoreira\utils\DataUtils.class
+br\cmoreira\tests\ContaTest.class
+br\cmoreira\core\BaseTest.class
+br\cmoreira\pages\ResumoPage.class
+br\cmoreira\pages\MovimentacaoPage.class
+br\cmoreira\core\Propriedades.class
+br\cmoreira\pages\LoginPage.class
+br\cmoreira\suites\SuiteGeral.class
+br\cmoreira\tests\MovimentacaoTest.class
+br\cmoreira\core\BasePage.class
+br\cmoreira\pages\ContasPage.class
+br\cmoreira\pages\MenuPage.class
+br\cmoreira\pages\SaldoPage.class
+br\cmoreira\tests\RemoverMovimentacaoContaTest.class
+br\cmoreira\core\DriverFactory.class
+br\cmoreira\tests\ResumoTest.class

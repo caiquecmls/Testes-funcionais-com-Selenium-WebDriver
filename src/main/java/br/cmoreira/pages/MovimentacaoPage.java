@@ -3,11 +3,10 @@ package br.cmoreira.pages;
 import static br.cmoreira.core.DriverFactory.getDriver;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import br.cmoreira.core.BasePage;
 import br.cmoreira.core.DriverFactory;
@@ -34,13 +33,15 @@ public class MovimentacaoPage extends BasePage {
 		Escrever("valor", valor);
 	}
 
-	public void selecionarConta(int conta) {
-		ClicarBotao(By.xpath("//*[@id='conta']/option[" + conta + "]"));
+	public void setConta(String conta) {
+	    WebElement elementoSelect = DriverFactory.getDriver().findElement(By.xpath("//select[@id='conta']"));
+		Select select = new Select(elementoSelect);
+		select.selectByVisibleText(conta);
 	}
 
 	// public void Salvar() {
 	// ClicarBotao(By.xpath("//div[@class='btn-group']/button"));
-	// }
+	// }	
 
 	public String obterMensagemSucesso() {
 		return ObterTexto(By.xpath("//div[@class='alert alert-success']"));
